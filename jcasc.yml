@@ -1,0 +1,25 @@
+jenkins:
+  tools:
+    jdk:
+      installations:
+        - name: "jdk-21"
+          home: "/usr/lib/jvm/java-21-openjdk-amd64"
+    maven:
+      installations:
+        - name: "MAVEN3.9.9"
+          home: "/opt/maven"
+
+  authorizationStrategy:
+    loggedInUsersCanDoAnything:
+      allowAnonymousRead: false
+
+  securityRealm:
+    local:
+      allowsSignup: false
+      users:
+        - id: "admin"
+          password: "admin"
+
+unclassified:
+  location:
+    url: http://localhost:8080/

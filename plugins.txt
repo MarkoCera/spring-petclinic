@@ -1,0 +1,12 @@
+pipeline-model-definition
+workflow-aggregator
+git
+ssh-slaves
+ssh-credentials
+matrix-auth
+credentials
+scm-api
+workflow-scm-step
+artifact-manager
+maven-plugin
+jdk-tool
